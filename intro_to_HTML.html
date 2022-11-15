@@ -1,0 +1,88 @@
+What is HTML ?
+-Hypertext Markup Language - standard markup language used to create web pages
+-Basically tells your browser how to display web pages
+What does HTML look like ?
+-HTML usestags and elements to enclose different parts of the content
+
+<p>My name is Kat</p>#element-->paragraph
+
+E.g.:
+<!DOCTYPE html>					   #informs the browser that the document type is html
+<html>		   					   #wraps all the html content
+<head>		   					   #put content here that shouldnt be shown to visitors. like linked Stylesheets/Javascript files 
+	< meta charset = "utf-8">	   #sets the character set. Usally set to 'utf-8', which includes most characters used in
+	<title>Your title here</title>  language 
+</head>
+<body> 							   #contains all content you want to show visitors 
+	<h1>HTML is Cool</h1>		   #header, up to h6, decreasing in size
+	<p>Hello, welcome to my page</p>
+	<p>
+		My name is <strong>Kat</strong>#bolds text within the tag
+		My surname is <em>Motlana</em> #italcises text within tag/emphasises
+	</p>
+</body>
+</html>							   #JS Bin.com
+
+LISTS AND COMMENTS(inside the body)
+
+<ol>							   #ordered/numbered list
+	<li>						   #indicates list item
+		Add flower
+	</li>
+	<li>Stir in eggs</li>
+</ol>
+
+<ul>							  #unordered/bullet point list
+	<li>flour</li>
+	<li>1 cup milk</li>
+</ul>
+<!--type comments here -->
+
+NESTED LISTS
+<ol>							   <!--ordered/numbered list-->
+	<li>						   <!--indicates list item-->
+		Add flower
+	</li>
+	<li>Stir in eggs</li>
+	<ul><li>use the whip to stir</li>
+	<li>Let the eggs settle</li>
+	</ul>
+</ol>
+
+IMAGES <!--pexels.com, good resource for images-->
+<img src="http://i.imgur.com/jtdxrZ6.jpg" alt ="Sprinkle Donut"/><!--source/url to image and alternative text if image doesnt load or for user with screenreader -->
+
+IMAGES IN LISTS
+<ul>
+	<p>---Seperation---</p>										<!--Seperates image from list items-->
+	<li><img src="http://i.imgur.com/tJJU5nH.jpg" alt ="Brown donut held in hand"></li>
+</ul>
+
+HOW TO USE EMOJIS(emojipedia, good resource for emojis)
+<!--1.They are just characters-->
+<!--2.You can select them,copy them,paste them adjust their size and so on-->
+<!--3.They have a more primitive numerical representation that you can use to get them to display-->
+ 
+ ---WAYS TO USE EMOJIS---
+ <!--1. Use them directly-->
+ <!--go to emojipedia and copy the emoji directly and paste it in your code-->
+ <!--2. Specify their unicode codepoint--> 
+ <!--find the codepoint on emojipedia, paste it in your code, with these characters &#x first-->
+ ---HTML---
+ <body>
+	   <div class="content">
+O			<p>Emojis are pretty awesome</p>
+			<p>Here is an example</p>
+			<h4 id="emoji">:p</h4><!--paste the emoji directly-->
+			<h4 id="emoji">&#x1F354 </h4><!--using codepoint representation.&#x tells the browser/code engine we dealing with unicode character,then follows the codepoint-->
+	   </div>
+ </body>
+ <!--unicode is a major set standard that characters adhere to and ensures that a character viewed on my machine is the same on a different device/language-->
+ <!--a codepoint is an index value for an array, codepoint shows you where in the unicode table to find a character-->
+ 
+ LINKS<!--To link to other pages of your website or other sections of your webpage-->
+ <a href="http://www.google.com">Go to Google</a><!--attribute href is hypertext reference-->
+ IMAGES AS LINKS
+ <a href="http://www.google.com"><img src="http://i.imgur.com/jtdxrZ6.jpg" alt="Sprinkle Donut"></a>
+ EMAIL LINKS<!--To open mail app for instance if visitors wanna email you-->
+ <a href="mailto: praisemotlana6@gmail.com">Email me</a>
